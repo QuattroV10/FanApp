@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="UserCellTableViewCell" customModule="FanApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bex-UI-FSs">
+                        <rect key="frame" x="5" y="5" width="285" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPs-M8-qXw">
+                                <rect key="frame" x="90" y="15.666666666666668" width="175" height="21.000000000000004"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OEr-G8-uYd">
+                                <rect key="frame" x="20" y="2" width="50" height="48.666666666666671"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CVG-E4-dgB"/>
+                                    <constraint firstAttribute="height" constant="50" id="dBD-gB-GXy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.15686274510000001" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bPs-M8-qXw" secondAttribute="trailing" constant="20" id="PWn-0r-p7d"/>
+                            <constraint firstItem="bPs-M8-qXw" firstAttribute="leading" secondItem="OEr-G8-uYd" secondAttribute="trailing" constant="20" id="PsW-tz-kMm"/>
+                            <constraint firstItem="OEr-G8-uYd" firstAttribute="centerY" secondItem="Bex-UI-FSs" secondAttribute="centerY" id="fGe-qu-LhK"/>
+                            <constraint firstItem="OEr-G8-uYd" firstAttribute="leading" secondItem="Bex-UI-FSs" secondAttribute="leading" constant="20" id="i4F-Oo-UfS"/>
+                            <constraint firstItem="bPs-M8-qXw" firstAttribute="centerY" secondItem="Bex-UI-FSs" secondAttribute="centerY" id="zkK-be-DiY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Bex-UI-FSs" secondAttribute="trailing" constant="5" id="Edc-bH-Pht"/>
+                    <constraint firstAttribute="bottom" secondItem="Bex-UI-FSs" secondAttribute="bottom" constant="5" id="F7N-wn-c0O"/>
+                    <constraint firstItem="Bex-UI-FSs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="nrP-rs-qMN"/>
+                    <constraint firstItem="Bex-UI-FSs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="w6B-H0-Cc0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="parentView" destination="Bex-UI-FSs" id="ENb-DS-zuU"/>
+                <outlet property="userImage" destination="OEr-G8-uYd" id="7uA-3L-Kbv"/>
+                <outlet property="userName" destination="bPs-M8-qXw" id="T3a-U1-wko"/>
+            </connections>
+            <point key="canvasLocation" x="81.679389312977094" y="81.690140845070431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

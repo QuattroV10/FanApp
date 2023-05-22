@@ -12,3 +12,8 @@ struct LoginField {
 struct ResponceCode{
     var code: Int
 }
+
+struct CurentUser {
+    var id: String
+    var email: String  
+}
